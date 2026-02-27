@@ -3,12 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TODO: Título da página
-    </title>
+    <title>TODO: Título da página</title>
+    <style>
+      *{
+        box-sizing: boder-box;
+      }
+      body {
+        margin: 0;
+        color: rgb(233, 242, 247);
+        background-color: rgb(29, 6, 6);
+        font-family: system-ui , Arial, sans-serif;
+        line-height: 1.5;
+      }
+    </style>
   </head>
 
   <body>
     <!-- TODO 01: HEADER com H1 (título) e P (subtítulo) -->
+    <div class="container" id="página">
+      <header class="box" id="cabecalho">
+        <div class="header-interno">
+          <h1 class="titulo">Site do Falmengo</h1>
+          <p>
+            Bem vindo ao Maraca: <strong>futebol</strong> , <em>gols</em> e
+            estratégia
+          </p>
+        </div>
+      </header>
+      <nav class="box" id="menu">
+        <div class="nav-interno">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#apresentacao">Mengão</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tabela">Títulos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main id="conteudo">
+        <div class="row" id="linha">
+          <section class="box-panel" id="apresentacao">
+            <h2>Quem é o flamengo?</h2>
+            <p>
+              Flamengo é o melhor time do Brasil que atualmente vem de
+              conquistas impotantes em toda América e conquistando os corações
+              dos torcedores <br />
+              Porem nessa nova <strong>temporada</strong> o time
+              <em>não tem sido muito produtivo</em> e os torcedores .
+            </p>
+            <p>
+              Na história por muito tempo o São Paulo foi um dos melhores times
+              do Brasil , mas com as recentes
+              <strong>conquistas do Flamengo</strong> ele
+              <em>ultrapassou o São Paulo na maioria dos títulos.</em>
+            </p>
+          </section>
+        </div>
+        <section class="box" id="galeria">
+          <h2>Galeria</h2>
+          <div class="gallery" id="galeria-imagens">
+            <img
+              class="fla-img"
+              src="fla3.jpg"
+              alt="Flamengo-Tetra"
+              width="220"
+              height="120"
+            />
+            <img
+              class="fla-img"
+              src="fla2.jfif"
+              alt="Flamengo-escudo"
+              width="220"
+              height="120"
+            />
+            <img
+              class="fla-img"
+              src="fla1.jpg"
+              alt="Flamengo-Aura"
+              width="220"
+              height="120"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
     <article>
       <header>
         <h1>Times de futebol</h1>
@@ -57,31 +141,32 @@
             src="PELÉ CAPA.jpg"
             alt="Rei do Futebol"
             width="1200"
-            height="850"/>
+            height="850"
+          />
           <figcaption>Foto tirada quando pelé foi campeão da copa</figcaption>
         </figure>
       </section>
- <section>
-  <h2></h2>
-<table>
-  <tr>
-    <th>Times</th>
-    <th>Titulos</th>
-  </tr>
-  <tr>
-   <td>Real Madrid</td>
-   <td>106</td>
-  </tr>
-  <tr>
-    <td>Manchester United</td>
-   <td>68</td>
-  </tr>
-  <tr>
-    <td>Flamengo</td>
-   <td>79</td>
-  </tr>
-</table>
- </section>
+      <section>
+        <h2></h2>
+        <table>
+          <tr>
+            <th>Times</th>
+            <th>Titulos</th>
+          </tr>
+          <tr>
+            <td>Real Madrid</td>
+            <td>106</td>
+          </tr>
+          <tr>
+            <td>Manchester United</td>
+            <td>68</td>
+          </tr>
+          <tr>
+            <td>Flamengo</td>
+            <td>79</td>
+          </tr>
+        </table>
+      </section>
       <!-- SEÇÃO D: Tabela -->
       <!-- Use SECTION, inclua H2 e uma TABLE com:
          - uma linha de cabeçalho (TR) com TH: Item | Descrição | Prioridade
@@ -89,8 +174,11 @@
     --></main>
 
     <!-- TODO 04: FOOTER com um P e um link (A) para uma fonte usada na pesquisa -->
-     <footer>
-      <a href="https://www.w3schools.com/tags/tag_table.asp"></a>
-     </footer>
+    <footer class="box" id="rodape">
+      <p class="texto-rodape">
+        <a class="lik" href="#topo">Topo</a>
+      </p>
+      <p class="texto-rodape">Exemplo para treino de HTML e CSS</p>
+    </footer>
   </body>
 </html>
