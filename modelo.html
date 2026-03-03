@@ -10,8 +10,8 @@
       }
       body {
         margin: 0;
-        color: rgb(233, 242, 247);
-        background-color: rgb(29, 6, 6);
+        color: rgb(4, 5, 5);
+        background-color: rgb(230, 206, 206);
         font-family: system-ui, Arial, sans-serif;
         line-height: 1.5;
       }
@@ -23,8 +23,8 @@
       }
 
       .box {
-        background: rgb(0, 0, 0) (0, 0, 0, 0.75);
-        border: 1px solide rgb(255, 255, 255) (240, 240, 255, 0.3);
+        background: rgb(83, 12, 12) (0, 0, 0, 0.75);
+        border: 1px solide rgb(22, 14, 14) (240, 240, 255, 0.3);
         border-radius: 12px;
         padding: 14px;
         margin-bottom: 12px;
@@ -32,20 +32,20 @@
 
       h1,
       h2 {
-        color: rgb(189, 139, 13);
+        color: rgb(138, 20, 20);
         margin: 0 0 8px;
       }
       .header-interno p {
         margin: 0;
-        color: #d1d5db;
+        color: #8a1f1f;
       }
-      p{
-        color: aqua;
+      p {
+        color: rgb(22, 6, 6);
       }
-      #apresentacao{
-   border-left: 8px solid rgb(189, 139, 13);
+      #apresentacao {
+        border-left: 8px solid rgb(189, 139, 13);
       }
-      .nav{
+      .nav {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -57,11 +57,38 @@
         display: inline-block;
         text-decoration: none;
         color: black;
-        background: rgb(189, 139, 13);
+        background: rgb(255, 0, 0);
         padding: 8px 10px;
         border-radius: 10px;
         font-weight: 700;
       }
+      .nav-link:hover {
+        background: rgb(167, 32, 9);
+      }
+      .gallery {
+        width: 920px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
+      .fla1 {
+        width: 250px;
+        height: 250px;
+        border: 3px solid rgb(194, 19, 0);
+        border-radius: 10px;
+      }
+      footer p {
+        color: rgb(173, 2, 2);
+        margin: 6px 0 0;
+      }
+      .link{
+        color: #a30000;
+        text-decoration: none;
+      }
+      .link:hover{
+        text-decoration: underline;
+      }
+
     </style>
   </head>
 
@@ -94,136 +121,38 @@
       </nav>
 
       <main id="conteudo">
-        <div class="row" id="linha">
-          <section class="box-panel" id="apresentacao">
-            <h2>Quem é o flamengo?</h2>
-            <p>
-              Flamengo é o melhor time do Brasil que atualmente vem de
-              conquistas impotantes em toda América e conquistando os corações
-              dos torcedores <br />
-              Porem nessa nova <strong>temporada</strong> o time
-              <em>não tem sido muito produtivo</em> e os torcedores .
-            </p>
-            <p>
-              Na história por muito tempo o São Paulo foi um dos melhores times
-              do Brasil , mas com as recentes
-              <strong>conquistas do Flamengo</strong> ele
-              <em>ultrapassou o São Paulo na maioria dos títulos.</em>
-            </p>
-          </section>
-        </div>
+        <section class="box" id="apresentacao">
+          <h2>Quem é o flamengo?</h2>
+          <p>
+            Flamengo é o melhor time do Brasil que atualmente vem de conquistas
+            impotantes em toda América e conquistando os corações dos torcedores
+            <br />
+            Porem nessa nova <strong>temporada</strong> o time
+            <em>não tem sido muito produtivo</em> e os torcedores .
+          </p>
+          <p>
+            Na história por muito tempo o São Paulo foi um dos melhores times do
+            Brasil , mas com as recentes
+            <strong>conquistas do Flamengo</strong> ele
+            <em>ultrapassou o São Paulo na maioria dos títulos.</em>
+          </p>
+        </section>
+
         <section class="box" id="galeria">
           <h2>Galeria</h2>
           <div class="gallery" id="galeria-imagens">
-            <img
-              class="fla-img"
-              src="fla3.jpg"
-              alt="Flamengo-Tetra"
-              width="220"
-              height="120"
-            />
-            <img
-              class="fla-img"
-              src="fla2.jfif"
-              alt="Flamengo-escudo"
-              width="220"
-              height="120"
-            />
-            <img
-              class="fla-img"
-              src="fla1.jpg"
-              alt="Flamengo-Aura"
-              width="220"
-              height="120"
-            />
+            <img class="fla1" src="fla3.jpg" alt="Flamengo-Tetra" />
+            <img class="fla1" src="fla2.jfif" alt="Flamengo-escudo" />
+            <img class="fla1" src="fla1.jpg" alt="Flamengo-Aura" />
           </div>
         </section>
       </main>
     </div>
-    <article>
-      <header>
-        <h1>Times de futebol</h1>
-        <p>A historia e tradição dos times do maior esporte do mundo</p>
-      </header>
-    </article>
-    <!-- TODO 02: NAV com uma lista (UL/LI) e 3 links (A) -->
-    <nav>
-      <a href="https://www.flamengo.com.br/">Flamengo</a>
-      <a href="https://www.realmadrid.com/pt-PT">Real Madrid</a>
-      <a href="https://www.liverpoolfc.com/pt">Liverpool</a>
-    </nav>
-
-    <main>
-      <!-- TODO 03: MAIN com as seções abaixo -->
-      <section>
-        <h2>História do futebol</h2>
-        <p>
-          O futebol, esporte que é considerado a paixão nacional e, sem dúvidas,
-          o mais popular do mundo,
-          <strong>começou a ser praticado na Inglaterra</strong>, no século
-          XVII.
-        </p>
-        <p>
-          À época,<em
-            >o esporte não tinha o formato que tem hoje e tampouco era chamado
-            de “futebol”</em
-          >. Isso só aconteceu décadas depois, com a criação das regras.
-        </p>
-      </section>
-      <!-- SEÇÃO B: Lista -->
-      <!-- Use SECTION, inclua H2 e uma lista (UL ou OL) com 4 itens (LI). -->
-      <section>
-        <h2>Melhores times da história</h2>
-        <ol>
-          <li>Real Madrid</li>
-          <li>Manchester United</li>
-          <li>Barcelona</li>
-          <li>Flamengo</li>
-        </ol>
-      </section>
-      <section>
-        <h2>Melhor jogador da história</h2>
-        <figure>
-          <img
-            src="PELÉ CAPA.jpg"
-            alt="Rei do Futebol"
-            width="1200"
-            height="850"
-          />
-          <figcaption>Foto tirada quando pelé foi campeão da copa</figcaption>
-        </figure>
-      </section>
-      <section>
-        <h2></h2>
-        <table>
-          <tr>
-            <th>Times</th>
-            <th>Titulos</th>
-          </tr>
-          <tr>
-            <td>Real Madrid</td>
-            <td>106</td>
-          </tr>
-          <tr>
-            <td>Manchester United</td>
-            <td>68</td>
-          </tr>
-          <tr>
-            <td>Flamengo</td>
-            <td>79</td>
-          </tr>
-        </table>
-      </section>
-      <!-- SEÇÃO D: Tabela -->
-      <!-- Use SECTION, inclua H2 e uma TABLE com:
-         - uma linha de cabeçalho (TR) com TH: Item | Descrição | Prioridade
-         - 3 linhas (TR) com TD (valores livres, coerentes)
-    --></main>
-
+    <section class="box">
     <!-- TODO 04: FOOTER com um P e um link (A) para uma fonte usada na pesquisa -->
     <footer class="box" id="rodape">
       <p class="texto-rodape">
-        <a class="lik" href="#topo">Topo</a>
+        <a class="link" href="#topo">Topo</a>
       </p>
       <p class="texto-rodape">Exemplo para treino de HTML e CSS</p>
     </footer>
